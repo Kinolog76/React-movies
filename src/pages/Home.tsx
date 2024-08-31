@@ -1,10 +1,10 @@
-import { getPopularMovies } from "../utils/http";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import { MoviesData } from "../models/moviesData";
-import { AxiosData } from "../models/axios";
-import getImageLink from "../utils/imageLinks.helpers";
-import dateFormate from "../utils/dateFormate.helpers";
+import { MoviesData } from "@/utils/models/moviesData";
+import { getPopularMovies } from "@/utils/http";
+import { AxiosData } from "@/utils/models/axios";
+import getImageLink from "@/utils/helpers/imageLinks.helpers";
+import dateFormate from "@/utils/helpers/dateFormate.helpers";
 
 function Home() {
   const [page, setPage] = useState(1);

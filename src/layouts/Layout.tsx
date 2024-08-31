@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Suspense } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "@/layouts/Header";
+import Footer from "@/layouts/Footer";
 
 function Layout() {
   return (

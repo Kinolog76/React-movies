@@ -28,9 +28,9 @@ function HeaderMenu({
         ref={menuRef}
         className={`items-center justify-between ${
           menuOpen ? "flex" : "hidden"
-        } md:static absolute w-full top-16 left-4 right-4 md:flex md:w-auto md:order-1`}
+        } md:static absolute w-full top-16 left-0 right-0 md:flex md:w-auto md:order-1`}
         id="navbar-user">
-        <ul className="flex mr-8 md:mr-4 w-full flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul className="flex mx-2 w-full flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50  rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           {menuItems.map((item) => (
             <li key={item.name}>
               <NavLink

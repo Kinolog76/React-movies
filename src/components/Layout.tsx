@@ -7,12 +7,10 @@ function Layout() {
   return (
     <>
       <Header />
-      <main className="dark:bg-gray-900">
+      <main className="dark:bg-gray-900 mt-20">
         <Suspense fallback={<div>Loading...</div>}>
           <Outlet />
         </Suspense>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
       <Footer />
     </>

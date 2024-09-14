@@ -44,7 +44,7 @@ function Header() {
   return (
     <header>
       <nav className="bg-white border-gray-600 dark:bg-gray-900 fixed top-0 left-0 right-0 z-50 border-b-2 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-4 md:py-2  relative">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-1 px-4 md:py-2 relative">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} className="h-auto w-24" alt="Flowbite Logo" />
           </Link>

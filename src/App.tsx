@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "@/layouts/Layout";
-import Home from "@/pages/Home";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import MoviesPage from "@/pages/MoviesPage";
-import TvSeriesPage from "@/pages/TvSeriesPage";
-import Movies from "@/pages/Movies";
-import TvSeries from "@/pages/TvSeries";
+import { lazy } from "react";
+
+import Layout from "@/layouts/Layout";
+const Home = lazy(() => import("@/pages/Home"));
+const MoviesPage = lazy(() => import("@/pages/MoviesPage"));
+const TvSeriesPage = lazy(() => import("@/pages/TvSeriesPage"));
+const Movie = lazy(() => import("@/pages/Movie"));
+const TvSeries = lazy(() => import("@/pages/TvSeries"));
 
 const queryClient = new QueryClient();
 
@@ -17,7 +19,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="movies" element={<MoviesPage />} />
-            <Route path="movies/:id" element={<Movies />} />
+            <Route path="movie/:id" element={<Movie />} />
             <Route path="tv-series" element={<TvSeriesPage />} />
             <Route path="tv-series/:id" element={<TvSeries />} />
             <Route path="*" element={<Home />} />

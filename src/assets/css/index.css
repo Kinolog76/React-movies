@@ -20,3 +20,17 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #0044ff;
 }
+.movie-card h3 {
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.movie-card .CircularProgressbar .CircularProgressbar-text {
+  font-size: 42px;
+}
+@media (max-width: 768px) {
+  .movie-card .CircularProgressbar .CircularProgressbar-text {
+    font-size: 38px;
+  }
+}
